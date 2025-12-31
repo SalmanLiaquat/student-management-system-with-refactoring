@@ -1,15 +1,5 @@
 ﻿# student-management-system-with-refactoring
 
-STEP 1:(Extract class)
-Problem in Before_refactoring.py code 
-  -> Student data stored in dictionary
-  -> No encapsulation
-  -> Too many responsibilities mixed
-  -> Hard to maintain
-Solution:
-  We extract two classes:
-         -> Student
-         -> StudentManager
-    that solution is in Extract_class_refactoring.py
+
 
 
