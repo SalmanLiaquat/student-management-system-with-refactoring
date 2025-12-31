@@ -1,4 +1,3 @@
-# Replace_Temp_with_Query.py
 
 class Student:
     def __init__(self, roll_number, student_name):
