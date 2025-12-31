@@ -4,6 +4,13 @@
 ## Project Overview
 This project demonstrates the **Extract Class,Rename Variables / Methods,Extract Method,Inline Method,Replace Temp with Query,Remove Dead Code, and Introduce Parameter Object** refactoring technique by moving from a procedural dictionary-based system to an Object-Oriented approach.
 
+## Overview
+The system manages student records, subject marks, and grades. Features:
+- Add/search/update student records
+- Display all students
+- Generate reports: grade distribution, pass/fail, class topper
+
+
 ### Step 1: Extract Class
 - **Problem:** Student data was stored in raw dictionaries, leading to poor encapsulation and high maintenance costs.
 - **Solution:** Created `Student` and `StudentManager` classes to separate data from logic.
@@ -28,5 +35,10 @@ This project demonstrates the **Extract Class,Rename Variables / Methods,Extract
 - External behavior remains unchanged
 - Improved code readability and reduced unnecessary method calls
 
-
+### Step 5: Replace Temp with Query
+- Removed temporary variables in:
+  - `Student.show_summary()` → replaced `avg` with `calculate_average()` directly
+  - `StudentManager.class_topper_report()` → replaced `avg` with direct call
+- Simplified code, reduced mutable temp variables
+- External behavior unchanged
 
