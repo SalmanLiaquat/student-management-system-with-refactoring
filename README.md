@@ -58,3 +58,24 @@ The system manages student records, subject marks, and grades. Features:
   - Simplified function/method calls in `StudentManager`  
 - **Effect:** Reduced parameter list complexity, improved readability, and maintained external behavior  
 
+## Challenges Faced
+1. **Understanding Legacy Code Logic**  
+   - Procedural code with dictionaries and nested loops made understanding data flow difficult.
+
+2. **Refactoring Without Breaking Functionality**  
+   - Careful testing was required to ensure menu options and calculations remained accurate.
+
+3. **Managing Multiple Refactoring Techniques**  
+   - Applying Extract Class, Inline Method, Replace Temp with Query, etc., simultaneously was challenging.
+
+4. **Handling Edge Cases and Input Validation**  
+   - Added validation for marks, subject names, and empty inputs without affecting behavior.
+
+5. **Balancing Modularity and Simplicity**  
+   - Avoided over-complicating design while implementing all 7 refactoring steps.
+
+6. **Testing After Each Step**  
+   - Continuous testing was needed to ensure correctness after every change.
+
+7. **Documentation and Reporting**  
+   - Clearly explaining each refactoring step and improvement required detailed attention.
