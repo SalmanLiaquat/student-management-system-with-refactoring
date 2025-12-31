@@ -42,3 +42,19 @@ The system manages student records, subject marks, and grades. Features:
 - Simplified code, reduced mutable temp variables
 - External behavior unchanged
 
+### Step 6: Remove Dead Code
+- **Problem:** Legacy code had unused variables, redundant counters, and debug prints.  
+- **Solution:**  
+  - Removed unused temporary variables in helper functions  
+  - Removed redundant counters in loops  
+  - Removed old debug print statements  
+- **Effect:** Code is cleaner, easier to maintain, with no change to program behavior  
+
+### Step 7: Introduce Parameter Object
+- **Problem:** Multiple functions shared the same group of parameters (roll_number, student_name, subjects)  
+- **Solution:**  
+  - Created `StudentData` class as a **parameter object**  
+  - Replaced multiple parameters with a single `StudentData` object  
+  - Simplified function/method calls in `StudentManager`  
+- **Effect:** Reduced parameter list complexity, improved readability, and maintained external behavior  
+
