@@ -1,4 +1,3 @@
-# Extract_Method_Refactoring.py
 
 class Student:
     def __init__(self, roll_number, student_name):
