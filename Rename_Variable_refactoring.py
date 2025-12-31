@@ -1,4 +1,3 @@
-# Rename_Variables_Methods.py
 
 class Student:
     def __init__(self, roll_number, student_name):
