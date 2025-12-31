@@ -2,7 +2,7 @@
 
 
 ## Project Overview
-This project demonstrates the **Extract Class** refactoring technique by moving from a procedural dictionary-based system to an Object-Oriented approach.
+This project demonstrates the **Extract Class,Rename Variables / Methods,Extract Method,Inline Method,Replace Temp with Query,Remove Dead Code, and Introduce Parameter Object** refactoring technique by moving from a procedural dictionary-based system to an Object-Oriented approach.
 
 ### Step 1: Extract Class
 - **Problem:** Student data was stored in raw dictionaries, leading to poor encapsulation and high maintenance costs.
@@ -18,9 +18,15 @@ This project demonstrates the **Extract Class** refactoring technique by moving 
 - `calculate_grade()`, `input_subject_data()`, and report helper methods
 - Improved readability, reusability, and maintainability
 - External behavior unchanged
-### Files
-* `Before_refactoring.py`: The original legacy code.
-* `Extract_class_refactoring.py`: The newly refactored code.
-* `Rename Variable_refactoring`: The refacetor code by apply rename variable refactoring technique.
-* `Extract_Method_refactoring`: Refactor the code BY Extract Method.
+
+### Step 4: Inline Method
+- Inlined simple methods to reduce indirection:
+  - `calculate_grade()` directly in `input_student_data()`
+  - `_print_grade_distribution()` in `grade_distribution_report()`
+  - `_calculate_pass_fail()` in `pass_fail_report()`
+  - `_find_class_topper()` in `class_topper_report()`
+- External behavior remains unchanged
+- Improved code readability and reduced unnecessary method calls
+
+
 
